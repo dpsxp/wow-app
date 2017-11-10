@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './containers/app.js';
+import rxjsconfig from 'recompose/rxjsObservableConfig';
+import { setObservableConfig } from 'recompose';
+setObservableConfig(rxjsconfig)
 
 const main = document.querySelector('#main')
 
